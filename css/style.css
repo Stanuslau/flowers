@@ -1,0 +1,468 @@
+@font-face {
+  font-family: "Gotham Pro Medium";
+  src: url("../fonts/GothamPro-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham Pro Light";
+  src: url("../fonts/GothamPro-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamPro.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: #292929;
+  color: #fff;
+  font-family: "Gotham Pro", sans-serif;
+  margin: 0;
+}
+.header {
+  padding-top: 50px;
+}
+.header-description {
+  font-family: "Gotham Pro Light";
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.12px;
+  line-height: normal;
+  font-size: 12px;
+}
+.text-color-red {
+  color: #ff3469;
+  font-family: "Gotham Pro Medium";
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.12px;
+  line-height: normal;
+}
+.header-phone {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+  text-align: right;
+}
+.header-info {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 7px;
+  display: block;
+  letter-spacing: 0.12px;
+  text-align: right;
+}
+.header-callback {
+  color: #ff3469;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.16px;
+  display: block;
+  text-align: right;
+  margin-top: 16px;
+}
+.flowers-slider {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 83px;
+}
+:root {
+  --swiper-navigation-size: 18px;
+}
+.hero {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 77px;
+  border-bottom: 1px solid #4c4c4c;
+}
+.hero-title {
+  margin: auto;
+  font-family: "Gotham Pro Medium";
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: 0.34px;
+  margin-bottom: 34px;
+  text-transform: uppercase;
+  line-height: normal;
+  max-width: 652px;
+}
+.hero-description {
+  margin: auto;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Gotham Pro Light";
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.18px;
+  line-height: 1.4;
+  margin-bottom: 87px;
+  max-width: 590px;
+}
+.call-to-action {
+  display: block;
+  margin-bottom: 36px;
+  font-family: "Gotham Pro Light";
+  font-size: 19px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+.button {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.18px;
+  color: #fff;
+  border: 3px solid #ff2e55;
+  background-color: #ff2e55;
+  padding: 30px 65px;
+  margin-top: 36px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+.reviews {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.reviews-slider {
+  margin-top: 100px;
+}
+.review-image {
+  width: 220px;
+  height: 220px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.review-image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+.review-name {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Gotham Pro Medium";
+  margin-bottom: 5px;
+}
+.review-city {
+  font-family: "Gotham Pro Light";
+  font-size: 18px;
+  font-weight: 400;
+}
+/* Все что есть внутрие .review-image  */
+.review-image > * {
+  position: relative;
+}
+.review-image-1 {
+  background: #000 url("../img/reviews/review-1.jpg");
+}
+.review-image-2 {
+  background: #000 url("../img/reviews/review-2.jpg");
+}
+.review-text {
+  font-size: 18px;
+  letter-spacing: 0.18px;
+  padding: 10px;
+  font-weight: 400;
+  letter-spacing: 0.18px;
+  line-height: 1.4;
+  padding: 50px;
+}
+.review-link {
+  color: #f24841;
+}
+.section-title {
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+}
+.advantages {
+  text-align: center;
+  padding-bottom: 100px;
+  padding-top: 50px;
+  border-bottom: 1px solid #4c4c4c;
+}
+.advantages-wrapper {
+  min-height: 82px;
+  margin-bottom: 30px;
+}
+.advantages-title {
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 1.4;
+  max-width: 270px;
+  margin: auto;
+}
+.goods {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.section-description {
+  font-size: 18px;
+  text-align: center;
+}
+.card {
+  text-align: center;
+  border: 3px solid #fff;
+  padding: 33px 35px 30px 35px;
+  margin-top: 27px;
+}
+.card-title {
+  margin-top: 23px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.card-label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 7px;
+  margin-top: 20px;
+}
+.color-label {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  cursor: pointer;
+}
+.color-input {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: -9;
+}
+.color-label.white {
+  background-color: #ffffff;
+}
+.color-label.biege {
+  background-color: #f7b496;
+}
+.color-label.pink {
+  background-color: #ed366e;
+}
+.color-label.red {
+  background-color: #ff0000;
+}
+.color-label.blue {
+  background-color: #12129d;
+}
+.counter-input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #292929;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.counter-button {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #292929;
+  border: none;
+}
+.card-button {
+  font-size: 14px;
+  width: 100%;
+  padding-bottom: 13px;
+  padding-top: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.more {
+  font-size: 14px;
+  color: #f24841;
+  display: block;
+  text-align: center;
+  margin-top: 39px;
+  padding: 10px;
+}
+.more:after {
+  display: inline-block;
+  content: "";
+  width: 10px;
+  height: 4px;
+  background: url("../img/caret.png") no-repeat center;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.offer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+.offer-link {
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 65px;
+}
+.offer-label {
+  display: block;
+  margin-bottom: 22px;
+  font-size: 14px;
+}
+.offer-phone {
+  font-size: 36px;
+  text-decoration: none;
+  color: #fff;
+}
+.footer-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 33px;
+}
+.footer-menu-link {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.footer-menu-item {
+  margin-right: 30px;
+}
+.social {
+  font-size: 16px;
+}
+.footer-label {
+  display: block;
+  font-style: 14px;
+  margin-bottom: 12px;
+}
+.footer-info {
+  text-align: right;
+}
+.footer-phone {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  display: block;
+  margin-bottom: 12px;
+}
+.footer-white {
+  background-color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.footer-white-description {
+  color: #292929;
+  font-size: 12px;
+  letter-spacing: 0.12px;
+}
+.footer-reveloper {
+  color: #101010;
+  font-size: 12px;
+  font-weight: 400;
+}
+.footer-developer-link {
+  color: #101010;
+  font-size: 12px;
+  font-weight: 400;
+}
+.modal {
+  display: none;
+}
+.modal-title {
+  color: #292929;
+}
+.modal-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+}
+.modal-button {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .body {
+    margin: auto;
+  }
+  .header {
+    text-align: center;
+  }
+  .header-phone,
+  .header-info,
+  .header-callback {
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  .hero {
+    padding-top: 50px;
+  }
+  .hero-description {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .colors {
+    max-width: 200px;
+    margin: auto;
+  }
+  .card-label {
+    margin: 15px auto;
+  }
+  .footer-label,
+  .footer-phone,
+  .footer-label,
+  .offer-title {
+    text-align: left;
+  }
+  .offer {
+    text-align: left;
+  }
+  .footer-white-description {
+    display: inline-block;
+  }
+  .footer-white-description,
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .footer-label,
+  .footer-phone,
+  .footer-label {
+    text-align: left;
+  }
+  .offer {
+    text-align: left;
+  }
+  .footer-white-description,
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+}
